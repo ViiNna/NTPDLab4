@@ -1,6 +1,6 @@
 Przy tym labolatorium przeniosłam się z windowsna na lunuxa (fedora)
 
-W zadaniu 3 użyłam w linii komned cURL:  curl -X POST http://127.0.0.1:8000/predict \
+W zadaniu 3 użyłam w linii komned cURL:  curl -X POST http://0.0.0.0:8000/predict \
      -H "Content-Type: application/json" \
      -d '{"value": 6}'
 
