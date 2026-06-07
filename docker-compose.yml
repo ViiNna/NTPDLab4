@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  ml-api:
+    build: .
+    ports:
+      - "8000:8000"
+    networks:
+      - ml-net
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - ml-net
+
+networks:
+  ml-net:
+    driver: bridge
